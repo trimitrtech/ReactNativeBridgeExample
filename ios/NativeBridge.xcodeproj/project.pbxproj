@@ -18,6 +18,8 @@
 		2DCD954D1E0B4F2C00145EB5 /* NativeBridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NativeBridgeTests.m */; };
 		5DF02DED5533705979071B38 /* libPods-NativeBridge-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1957E8DADFC51395FC10D1 /* libPods-NativeBridge-tvOSTests.a */; };
 		6183AEBDA75B68AEC9422EA5 /* libPods-NativeBridgeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 516109E0AD47B793C4C30ED9 /* libPods-NativeBridgeTests.a */; };
+		D39A141123F3221100BA6027 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39A141023F3221100BA6027 /* HelloWorld.swift */; };
+		D39A141323F3247200BA6027 /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = D39A141223F3247200BA6027 /* HelloWorld.m */; };
 		D88FCDC170829629BE2A2AFB /* libPods-NativeBridge-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFFC15EB0F74B4CCBBC90BC /* libPods-NativeBridge-tvOS.a */; };
 		E4D2C7D33AE5365E53182F49 /* libPods-NativeBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 666D1D76B03F7BB0709EA5FC /* libPods-NativeBridge.a */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,9 @@
 		A8EC12F6D78959D7965F0613 /* Pods-NativeBridgeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeBridgeTests.release.xcconfig"; path = "Target Support Files/Pods-NativeBridgeTests/Pods-NativeBridgeTests.release.xcconfig"; sourceTree = "<group>"; };
 		BC7D4D362DC43F95599BD3D7 /* Pods-NativeBridge-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeBridge-tvOS.release.xcconfig"; path = "Target Support Files/Pods-NativeBridge-tvOS/Pods-NativeBridge-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		C044144967A88CF8D1D73ED1 /* Pods-NativeBridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeBridge.debug.xcconfig"; path = "Target Support Files/Pods-NativeBridge/Pods-NativeBridge.debug.xcconfig"; sourceTree = "<group>"; };
+		D39A140F23F3221100BA6027 /* NativeBridge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeBridge-Bridging-Header.h"; sourceTree = "<group>"; };
+		D39A141023F3221100BA6027 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
+		D39A141223F3247200BA6027 /* HelloWorld.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorld.m; sourceTree = "<group>"; };
 		E96F82DF0AD4A471E397C3F9 /* Pods-NativeBridgeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeBridgeTests.debug.xcconfig"; path = "Target Support Files/Pods-NativeBridgeTests/Pods-NativeBridgeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ECB608F54785D65BACFA9CEE /* Pods-NativeBridge-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeBridge-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-NativeBridge-tvOS/Pods-NativeBridge-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -161,7 +166,6 @@
 				E96F82DF0AD4A471E397C3F9 /* Pods-NativeBridgeTests.debug.xcconfig */,
 				A8EC12F6D78959D7965F0613 /* Pods-NativeBridgeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,12 +179,15 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				D39A141223F3247200BA6027 /* HelloWorld.m */,
+				D39A141023F3221100BA6027 /* HelloWorld.swift */,
 				13B07FAE1A68108700A75B9A /* NativeBridge */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* NativeBridgeTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				6E3051551E35A0FC7AF0796C /* Pods */,
+				D39A140F23F3221100BA6027 /* NativeBridge-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -292,6 +299,9 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1100;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -308,6 +318,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -529,7 +540,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				D39A141123F3221100BA6027 /* HelloWorld.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				D39A141323F3247200BA6027 /* HelloWorld.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +595,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E96F82DF0AD4A471E397C3F9 /* Pods-NativeBridgeTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -605,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A8EC12F6D78959D7965F0613 /* Pods-NativeBridgeTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = NativeBridgeTests/Info.plist;
@@ -626,6 +641,7 @@
 			baseConfigurationReference = C044144967A88CF8D1D73ED1 /* Pods-NativeBridge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = NativeBridge/Info.plist;
@@ -637,6 +653,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = NativeBridge;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeBridge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -646,6 +665,7 @@
 			baseConfigurationReference = FF10AA97F14EE7DE2B58A082 /* Pods-NativeBridge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = NativeBridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -656,6 +676,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = NativeBridge;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeBridge-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
